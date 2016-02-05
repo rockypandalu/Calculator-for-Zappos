@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOX-kA-2uh">
+                                <rect key="frame" x="49" y="174" width="52" height="52"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="1" image="1">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="digitAction:" destination="BYZ-38-t0r" eventType="touchDown" id="vF0-73-wGU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuJ-0L-4Mq">
+                                <rect key="frame" x="123" y="174" width="52" height="52"/>
+                                <state key="normal" title="2" image="2">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="digitAction:" destination="BYZ-38-t0r" eventType="touchDown" id="BKo-o6-Imm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMJ-Sn-uuT">
+                                <rect key="frame" x="199" y="174" width="52" height="52"/>
+                                <state key="normal" title="3" image="3">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="digitAction:" destination="BYZ-38-t0r" eventType="touchDown" id="90e-Ky-cQo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAw-jL-HSd">
+                                <rect key="frame" x="274" y="174" width="52" height="52"/>
+                                <state key="normal" title="+" image="add">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="operation:" destination="BYZ-38-t0r" eventType="touchDown" id="gLr-4b-HUY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsH-3d-940">
+                                <rect key="frame" x="274" y="274" width="52" height="52"/>
+                                <state key="normal" title="-" image="minus">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="operation:" destination="BYZ-38-t0r" eventType="touchDown" id="Xpn-ye-e77"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8F-hk-AUe">
+                                <rect key="frame" x="199" y="474" width="52" height="52"/>
+                                <state key="normal" title="%" image="mod">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="operation:" destination="BYZ-38-t0r" eventType="touchDown" id="f7i-hu-mpg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TX-35-RqV">
+                                <rect key="frame" x="124" y="474" width="52" height="52"/>
+                                <state key="normal" title="dot" image="dot">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="digitAction:" destination="BYZ-38-t0r" eventType="touchDown" id="X2p-6G-5vo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzA-PQ-elu">
+                                <rect key="frame" x="49" y="474" width="52" height="52"/>
+                                <state key="normal" title="0" image="0">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="digitAction:" destination="BYZ-38-t0r" eventType="touchDown" id="ocl-3y-N4q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdN-DU-mlv">
+                                <rect key="frame" x="49" y="556" width="52" height="52"/>
+                                <state key="normal" title="square" image="square">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="square:" destination="BYZ-38-t0r" eventType="touchDown" id="OrQ-d2-RLl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyK-Ee-LFp">
+                                <rect key="frame" x="49" y="274" width="52" height="52"/>
+                                <state key="normal" title="4" image="4">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="digitAction:" destination="BYZ-38-t0r" eventType="touchDown" id="bMq-CM-mei"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfN-bh-oiA">
+                                <rect key="frame" x="199" y="274" width="52" height="52"/>
+                                <state key="normal" title="6" image="6">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="digitAction:" destination="BYZ-38-t0r" eventType="touchDown" id="PXw-uu-AyC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Seb-BH-ngS">
+                                <rect key="frame" x="49" y="374" width="52" height="52"/>
+                                <state key="normal" title="7" image="7">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="digitAction:" destination="BYZ-38-t0r" eventType="touchDown" id="4s8-2C-gTm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0t-fa-PDy">
+                                <rect key="frame" x="124" y="274" width="52" height="52"/>
+                                <state key="normal" title="5" image="5">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="digitAction:" destination="BYZ-38-t0r" eventType="touchDown" id="ymX-GP-xWH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0l-gq-pMG">
+                                <rect key="frame" x="124" y="374" width="52" height="52"/>
+                                <state key="normal" title="8" image="8">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="digitAction:" destination="BYZ-38-t0r" eventType="touchDown" id="ETk-cS-XfF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bk7-8r-1N9">
+                                <rect key="frame" x="199" y="374" width="52" height="52"/>
+                                <state key="normal" title="9" image="9">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="digitAction:" destination="BYZ-38-t0r" eventType="touchDown" id="0ZR-Om-3ot"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rlp-9r-VcQ">
+                                <rect key="frame" x="45" y="75" width="241" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPi-kp-D1L">
+                                <rect key="frame" x="274" y="474" width="52" height="52"/>
+                                <state key="normal" title="/" image="div">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="operation:" destination="BYZ-38-t0r" eventType="touchDown" id="DfX-mX-RwG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFf-aB-S4f">
+                                <rect key="frame" x="274" y="374" width="52" height="52"/>
+                                <state key="normal" title="X" image="mul" backgroundImage="mul">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="operation:" destination="BYZ-38-t0r" eventType="touchDown" id="80U-iy-2KN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dle-NQ-6EK">
+                                <rect key="frame" x="238" y="533" width="88" height="96.5"/>
+                                <state key="normal" title="enter" image="Enter">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showResult:" destination="BYZ-38-t0r" eventType="touchDown" id="7Wr-wO-Acz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov8-CO-fY1">
+                                <rect key="frame" x="139" y="556" width="85" height="52"/>
+                                <state key="normal" title="Button" image="Clear">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Clear:" destination="BYZ-38-t0r" eventType="touchDown" id="geE-1W-zQ6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89537595429694039" green="0.97592365928736335" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rlp-9r-VcQ" secondAttribute="trailing" constant="73" id="0gA-PW-Xw0"/>
+                            <constraint firstItem="Rlp-9r-VcQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="La8-eB-2vq"/>
+                            <constraint firstItem="Rlp-9r-VcQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="29" id="PjH-uS-QKE"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="displayLabel" destination="Rlp-9r-VcQ" id="gNg-T1-kOm"/>
+                        <outlet property="searchDisplayController" destination="fO8-pj-Hh9" id="awj-4A-NmU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="fO8-pj-Hh9">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="7Nz-eW-Miz"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="HN8-sM-JxN"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="p1U-tk-j5i"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="Xdz-h6-yPX"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="563.5" y="475.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0" width="60" height="60"/>
+        <image name="1" width="60" height="60"/>
+        <image name="2" width="60" height="60"/>
+        <image name="3" width="60" height="60"/>
+        <image name="4" width="60" height="60"/>
+        <image name="5" width="60" height="60"/>
+        <image name="6" width="60" height="60"/>
+        <image name="7" width="60" height="60"/>
+        <image name="8" width="60" height="60"/>
+        <image name="9" width="60" height="60"/>
+        <image name="Clear" width="100" height="56"/>
+        <image name="Enter" width="95" height="60"/>
+        <image name="add" width="83" height="83"/>
+        <image name="div" width="60" height="60"/>
+        <image name="dot" width="60" height="60"/>
+        <image name="minus" width="60" height="60"/>
+        <image name="mod" width="60" height="60"/>
+        <image name="mul" width="60" height="60"/>
+        <image name="square" width="60" height="60"/>
+    </resources>
+</document>
