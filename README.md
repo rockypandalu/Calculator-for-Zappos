@@ -2,8 +2,6 @@
 This is a demo for the information we can get from Google App Engine's Requestlog
 
 ## Data Introduction
-When a request made from client. Google App Engine (both Standard Environment and Flexible Environment) will generate logs with some information of the request.
-The information includes:
 	1. Project ID.
 	2. Module (Service) ID.
 	3. Client IP.
@@ -14,7 +12,6 @@ The information includes:
 	8. Any Log Written by Application (only in Standard Environment).
 
 ## Demo Purpose
-
 
 
 
