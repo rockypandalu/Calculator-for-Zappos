@@ -1,4 +1,5 @@
-## This is a demo for the information we can get from Google App Engine's natively generated log
+## Google App Engine Natively Log Investigation
+This is a demo for the information we can get from Google App Engine's natively generated log
 
 # Data Introduction
 When a request made from client. Google App Engine (both Standard Environment and Flexible Environment) will generate logs with some information of the request.
@@ -11,6 +12,7 @@ The information includes:
 6. Response Size
 7. Access URL
 8. Any Log Written by Application (only in Standard Environment)
+
 
 
 # Calculator in iOS
